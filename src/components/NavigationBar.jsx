@@ -51,10 +51,9 @@ function NavigationBar () {
             <MenuItem onClick={handleClose}><Link to={'/settings'}>Настройки</Link></MenuItem>
         </Menu>
           <Typography variant="h6" className={classes.title}>
-            News
+            Phoenix
           </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
+          </Toolbar>
       </AppBar>
     </div>
     )
