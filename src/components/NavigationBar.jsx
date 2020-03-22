@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import {Dehaze} from '@material-ui/icons';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -45,9 +46,9 @@ function NavigationBar () {
             open={Boolean(anchorEl)}
             onClose={handleClose}
         >
-            <MenuItem onClick={handleClose}>Profile</MenuItem>
-            <MenuItem onClick={handleClose}>My account</MenuItem>
-            <MenuItem onClick={handleClose}>Logout</MenuItem>
+            <MenuItem onClick={handleClose}><Link to={'/'}>Главная</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to={'/create-employee'}>Регистрация сотрудника</Link></MenuItem>
+            <MenuItem onClick={handleClose}><Link to={'/settings'}>Настройки</Link></MenuItem>
         </Menu>
           <Typography variant="h6" className={classes.title}>
             News
