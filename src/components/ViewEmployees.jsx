@@ -1,8 +1,8 @@
 import React from 'react';
 
-function ViewEmployees () {
+function ViewEmployees ({name='misha'}) {
     return (
-        <div>ViewEmployees</div>
+    <div>{name}</div>
     )
 };
 
